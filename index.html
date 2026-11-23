@@ -1,0 +1,1173 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>炫舞世家夏柏 - 官方视频门户 | 舞动热爱 · 记录真实舞台</title>
+<meta name="description" content="炫舞世家夏柏官方网站，专注街舞、现代舞与编舞创作的视频内容平台，汇聚原创舞蹈影像、创作者故事与社区互动，让每一次起舞都被高清记录。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff4d2e'/%3E%3Cpath d='M22 46c0-8 4-14 10-18 3-2 5-1 4 2-1 4-4 6-6 9-2 3-1 7 2 7 4 0 7-4 9-9 1-3 4-3 4 0 0 9-7 16-15 16-5 0-8-3-8-7z' fill='%23fff'/%3E%3Ccircle cx='44' cy='18' r='4' fill='%23ffd23f'/%3E%3C/svg%3E">
+<style>
+:root{
+  --xh-ink:#141018;
+  --xh-ink-soft:#2a2233;
+  --xh-paper:#fdfaf6;
+  --xh-paper-2:#f4efe8;
+  --xh-amber:#ff4d2e;
+  --xh-amber-deep:#e03a1e;
+  --xh-gold:#ffc93c;
+  --xh-violet:#5b3fa8;
+  --xh-line:#e5ddd2;
+  --xh-muted:#6f6577;
+  --xh-radius:18px;
+  --xh-max:1180px;
+  --xh-sticky:118px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:var(--xh-sticky);}
+body{
+  margin:0;background:var(--xh-paper);color:var(--xh-ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+ul{margin:0;padding:0;list-style:none;}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:800;letter-spacing:.2px;}
+p{margin:0 0 1em;}
+button{font-family:inherit;cursor:pointer;border:0;background:none;color:inherit;}
+.xh-wrap{width:min(100% - 40px,var(--xh-max));margin-inline:auto;}
+.xh-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--xh-amber);
+}
+.xh-eyebrow::before{content:"";width:24px;height:2px;background:var(--xh-amber);display:inline-block;}
+.xh-sec{padding:74px 0;}
+.xh-sec-head{margin-bottom:34px;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;}
+.xh-sec-head h2{font-size:clamp(24px,3.1vw,34px);}
+.xh-sec-head p{max-width:540px;color:var(--xh-muted);font-size:15px;margin:6px 0 0;}
+.xh-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 22px;border-radius:999px;font-weight:700;font-size:14px;
+  transition:transform .2s ease,box-shadow .2s ease,background .2s;
+  border:1.5px solid transparent;
+}
+.xh-btn:hover{transform:translateY(-2px);}
+.xh-btn-solid{background:var(--xh-amber);color:#fff;box-shadow:0 10px 24px -10px rgba(255,77,46,.85);}
+.xh-btn-solid:hover{background:var(--xh-amber-deep);}
+.xh-btn-ghost{border-color:var(--xh-ink);color:var(--xh-ink);}
+.xh-btn-ghost:hover{background:var(--xh-ink);color:#fff;}
+
+/* ============ 公告条 + 页头 ============ */
+.xh-topbar{
+  position:sticky;top:0;z-index:60;background:var(--xh-ink);color:#fff;
+  display:flex;align-items:center;gap:10px;overflow:hidden;white-space:nowrap;
+  font-size:13px;height:40px;
+}
+.xh-topbar-inner{display:flex;align-items:center;gap:26px;animation:xh-marquee 26s linear infinite;}
+.xh-topbar-inner:hover{animation-play-state:paused;}
+.xh-topbar b{color:var(--xh-gold);font-weight:700;}
+.xh-topbar .xh-dot{width:5px;height:5px;border-radius:50%;background:var(--xh-amber);flex:none;}
+@keyframes xh-marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.xh-header{
+  position:sticky;top:40px;z-index:59;background:rgba(253,250,246,.94);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--xh-line);
+}
+.xh-nav{display:flex;align-items:center;justify-content:space-between;gap:18px;height:78px;}
+.xh-logo{display:flex;align-items:center;gap:11px;font-weight:900;font-size:19px;letter-spacing:.4px;}
+.xh-logo-mark{
+  width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--xh-amber),var(--xh-violet));
+  display:grid;place-items:center;color:#fff;font-size:19px;font-weight:900;flex:none;
+  box-shadow:0 8px 18px -10px var(--xh-violet);
+}
+.xh-logo small{display:block;font-size:10px;font-weight:600;letter-spacing:.28em;color:var(--xh-muted);}
+.xh-nav-links{display:flex;align-items:center;gap:26px;font-size:14.5px;font-weight:600;}
+.xh-nav-links a{position:relative;padding:6px 0;color:var(--xh-ink-soft);}
+.xh-nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--xh-amber);transition:width .25s;}
+.xh-nav-links a:hover::after{width:100%;}
+.xh-nav-tools{display:flex;align-items:center;gap:10px;}
+.xh-search{display:flex;align-items:center;gap:6px;background:#fff;border:1.5px solid var(--xh-line);border-radius:999px;padding:6px 8px 6px 14px;}
+.xh-search input{border:0;outline:0;background:none;width:132px;font-size:13.5px;font-family:inherit;color:var(--xh-ink);}
+.xh-search button{width:30px;height:30px;border-radius:50%;background:var(--xh-amber);color:#fff;display:grid;place-items:center;font-size:13px;}
+.xh-burger{display:none;width:44px;height:44px;border-radius:12px;border:1.5px solid var(--xh-line);align-items:center;justify-content:center;flex-direction:column;gap:5px;}
+.xh-burger span{display:block;width:20px;height:2px;background:var(--xh-ink);transition:.25s;}
+.xh-burger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.xh-burger.is-open span:nth-child(2){opacity:0;}
+.xh-burger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.xh-mobile-menu{display:none;border-top:1px solid var(--xh-line);background:var(--xh-paper);}
+.xh-mobile-menu.is-open{display:block;}
+.xh-mobile-menu a{display:block;padding:14px 4px;border-bottom:1px dashed var(--xh-line);font-weight:600;font-size:15px;}
+.xh-search-tip{font-size:13px;color:var(--xh-amber);min-height:20px;padding:8px 0 0;font-weight:600;}
+
+/* ============ 首屏 6:4 ============ */
+.xh-hero{padding:56px 0 70px;background:
+  radial-gradient(900px 420px at 88% -10%,rgba(91,63,168,.13),transparent 70%),
+  radial-gradient(700px 380px at 6% 8%,rgba(255,77,46,.12),transparent 65%);}
+.xh-hero-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,4fr);gap:44px;align-items:center;}
+.xh-hero h1{font-size:clamp(40px,6.4vw,68px);letter-spacing:-1px;line-height:1.06;margin:14px 0 0;}
+.xh-hero h1 em{font-style:normal;color:var(--xh-amber);}
+.xh-hero-lead{font-size:18px;font-weight:700;color:var(--xh-ink-soft);margin:20px 0 12px;}
+.xh-hero-intro{color:var(--xh-muted);font-size:15.5px;max-width:56ch;}
+.xh-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 30px;}
+.xh-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:520px;}
+.xh-stat{background:#fff;border:1px solid var(--xh-line);border-radius:14px;padding:14px 16px;}
+.xh-stat b{display:block;font-size:26px;line-height:1.15;color:var(--xh-amber);font-weight:900;}
+.xh-stat span{font-size:12.5px;color:var(--xh-muted);}
+.xh-hero-visual{position:relative;}
+.xh-hero-visual figure{margin:0;border-radius:24px;overflow:hidden;box-shadow:0 34px 60px -34px rgba(20,16,24,.55);}
+.xh-hero-visual figcaption{
+  position:absolute;right:14px;bottom:14px;background:rgba(20,16,24,.82);color:#fff;
+  font-size:12px;padding:8px 14px;border-radius:999px;letter-spacing:.06em;
+}
+.xh-badge-float{
+  position:absolute;left:-14px;top:22px;background:#fff;border-radius:14px;padding:10px 14px;
+  box-shadow:0 16px 30px -20px rgba(20,16,24,.5);font-size:12px;font-weight:700;
+  display:flex;align-items:center;gap:8px;
+}
+.xh-badge-float i{width:9px;height:9px;border-radius:50%;background:#22c55e;display:block;}
+
+/* ============ 关键词解析 ============ */
+.xh-essay{background:var(--xh-paper-2);}
+.xh-essay-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr);gap:40px;align-items:start;}
+.xh-essay-aside{position:sticky;top:calc(var(--xh-sticky) + 16px);}
+.xh-essay-aside h2{font-size:clamp(24px,3vw,32px);margin:12px 0 14px;}
+.xh-essay-aside p{color:var(--xh-muted);font-size:14.5px;}
+.xh-essay-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px;}
+.xh-tag{font-size:12.5px;padding:6px 12px;border-radius:999px;background:#fff;border:1px solid var(--xh-line);color:var(--xh-ink-soft);font-weight:600;}
+.xh-essay article{background:#fff;border:1px solid var(--xh-line);border-radius:var(--xh-radius);padding:32px 34px;}
+.xh-essay h3{font-size:19px;margin:26px 0 10px;}
+.xh-essay h3:first-child{margin-top:0;}
+.xh-essay h3 span{color:var(--xh-amber);}
+.xh-essay article p{font-size:15.2px;color:#3b3344;}
+.xh-quote{border-left:3px solid var(--xh-amber);padding:4px 0 4px 16px;font-weight:700;color:var(--xh-ink-soft);margin:20px 0;}
+
+/* ============ 焦点/精选 ============ */
+.xh-feature-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:26px;}
+.xh-feature-main{background:#fff;border:1px solid var(--xh-line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;}
+.xh-feature-main figure{margin:0;position:relative;}
+.xh-feature-main figure img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.xh-play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.92);
+  display:grid;place-items:center;color:var(--xh-amber);font-size:22px;
+  box-shadow:0 10px 26px -12px rgba(0,0,0,.6);transition:transform .2s;
+}
+.xh-feature-main:hover .xh-play{transform:translate(-50%,-50%) scale(1.08);}
+.xh-feature-body{padding:22px 24px 24px;}
+.xh-feature-body h3{font-size:22px;margin:8px 0 10px;}
+.xh-feature-body p{color:var(--xh-muted);font-size:14.5px;margin:0 0 16px;}
+.xh-meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--xh-muted);font-weight:600;align-items:center;}
+.xh-meta .xh-tag{margin-left:auto;}
+.xh-feature-list{display:flex;flex-direction:column;gap:14px;}
+.xh-mini{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;background:#fff;border:1px solid var(--xh-line);border-radius:16px;padding:12px;transition:border-color .2s,transform .2s;}
+.xh-mini:hover{border-color:var(--xh-amber);transform:translateY(-2px);}
+.xh-mini img{width:96px;aspect-ratio:4/3;object-fit:cover;border-radius:11px;}
+.xh-mini h4{font-size:15px;margin-bottom:6px;}
+.xh-mini p{font-size:12.8px;color:var(--xh-muted);margin:0;line-height:1.6;}
+
+/* ============ 视频条目列表 ============ */
+.xh-video-list{display:grid;gap:14px;}
+.xh-video-item{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:center;
+  background:#fff;border:1px solid var(--xh-line);border-radius:16px;padding:18px 20px;
+  transition:box-shadow .2s,border-color .2s;
+}
+.xh-video-item:hover{border-color:rgba(255,77,46,.55);box-shadow:0 16px 30px -26px rgba(20,16,24,.5);}
+.xh-video-item h4{font-size:16.5px;margin-bottom:5px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.xh-video-item h4 .xh-no{font-size:12px;color:#fff;background:var(--xh-violet);width:22px;height:22px;border-radius:6px;display:grid;place-items:center;flex:none;}
+.xh-video-item p{font-size:13.5px;color:var(--xh-muted);margin:0 0 8px;}
+.xh-video-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;}
+.xh-video-tags span{font-size:11.5px;padding:3px 9px;border-radius:999px;background:var(--xh-paper-2);color:var(--xh-ink-soft);font-weight:600;}
+.xh-video-data{font-size:12px;color:var(--xh-muted);font-weight:600;display:flex;flex-wrap:wrap;gap:12px;}
+.xh-video-ops{display:flex;flex-direction:column;gap:8px;align-items:stretch;min-width:104px;}
+.xh-mini-btn{
+  font-size:12.5px;font-weight:700;padding:7px 10px;border-radius:10px;
+  border:1.5px solid var(--xh-line);background:#fff;transition:.18s;white-space:nowrap;color:var(--xh-ink-soft);
+}
+.xh-mini-btn:hover{border-color:var(--xh-amber);color:var(--xh-amber);}
+.xh-mini-btn.is-on{background:var(--xh-amber);border-color:var(--xh-amber);color:#fff;}
+.xh-mini-btn.is-fav{background:var(--xh-violet);border-color:var(--xh-violet);color:#fff;}
+
+/* ============ 专题 ============ */
+.xh-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;}
+.xh-topic{background:#fff;border:1px solid var(--xh-line);border-radius:18px;padding:24px;display:flex;flex-direction:column;}
+.xh-topic .xh-topic-state{font-size:11.5px;font-weight:700;letter-spacing:.1em;color:#178a4b;background:#e9f8ef;align-self:flex-start;padding:4px 10px;border-radius:999px;}
+.xh-topic h3{font-size:19px;margin:12px 0 8px;}
+.xh-topic > p{font-size:13.8px;color:var(--xh-muted);margin:0 0 14px;}
+.xh-topic ul{display:grid;gap:8px;border-top:1px dashed var(--xh-line);padding-top:14px;margin-top:auto;}
+.xh-topic li{font-size:13.2px;color:#3b3344;display:flex;gap:8px;align-items:baseline;}
+.xh-topic li::before{content:"▸";color:var(--xh-amber);font-size:11px;flex:none;}
+.xh-topic figure{margin:0 0 14px;border-radius:12px;overflow:hidden;}
+
+/* ============ 作者矩阵 ============ */
+.xh-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;}
+.xh-author{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;background:#fff;border:1px solid var(--xh-line);border-radius:18px;padding:20px;}
+.xh-ava{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-weight:900;color:#fff;font-size:22px;flex:none;letter-spacing:1px;}
+.xh-author h3{font-size:16.5px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.xh-author h3 small{font-size:11px;font-weight:700;color:var(--xh-amber);border:1px solid currentColor;border-radius:999px;padding:1px 7px;}
+.xh-author .xh-field{font-size:12.5px;color:var(--xh-violet);font-weight:700;margin:3px 0 6px;}
+.xh-author p{font-size:13.4px;color:var(--xh-muted);margin:0 0 10px;}
+.xh-author-data{font-size:12px;color:var(--xh-muted);font-weight:600;display:flex;gap:14px;flex-wrap:wrap;}
+.xh-author-btn{font-size:12.5px;font-weight:700;color:var(--xh-amber);margin-top:10px;display:inline-block;}
+
+/* ============ 评论 ============ */
+.xh-comments-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+.xh-comment{background:#fff;border:1px solid var(--xh-line);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:10px;}
+.xh-comment-head{display:flex;align-items:center;gap:10px;}
+.xh-comment-head .xh-ava{width:40px;height:40px;font-size:15px;}
+.xh-comment-head b{font-size:14px;}
+.xh-comment-head span{font-size:11.5px;color:var(--xh-muted);display:block;margin-top:-2px;}
+.xh-comment p{font-size:13.8px;margin:0;color:#3b3344;}
+.xh-stars{color:var(--xh-gold);font-size:13px;letter-spacing:1px;margin-left:auto;}
+.xh-quote-comment{background:linear-gradient(135deg,#fff,#fff7f2);border-left:3px solid var(--xh-amber);}
+.xh-quote-comment p{font-size:15px;font-weight:600;}
+
+/* ============ 榜单 ============ */
+.xh-rank-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;}
+.xh-rank-card{background:#fff;border:1px solid var(--xh-line);border-radius:18px;padding:22px;}
+.xh-rank-card h3{font-size:17px;display:flex;align-items:center;gap:8px;margin-bottom:14px;}
+.xh-rank-card h3 i{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;background:var(--xh-amber);color:#fff;font-style:normal;font-size:13px;font-weight:800;flex:none;}
+.xh-rank-card ol{counter-reset:rk;display:grid;gap:10px;}
+.xh-rank-card li{counter-increment:rk;display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:8px;align-items:center;font-size:13.6px;}
+.xh-rank-card li::before{content:counter(rk);font-weight:900;color:var(--xh-muted);font-size:12.5px;text-align:center;}
+.xh-rank-card li b{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.xh-rank-card li em{font-style:normal;font-size:12px;color:var(--xh-amber);font-weight:700;}
+
+/* ============ FAQ / 动态 / 合作 ============ */
+.xh-duo{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,4fr);gap:26px;align-items:start;}
+.xh-faq details{border:1px solid var(--xh-line);background:#fff;border-radius:14px;padding:0 18px;margin-bottom:10px;}
+.xh-faq summary{cursor:pointer;list-style:none;font-weight:700;font-size:15px;padding:16px 0;display:flex;justify-content:space-between;gap:14px;align-items:center;}
+.xh-faq summary::-webkit-details-marker{display:none;}
+.xh-faq summary::after{content:"+";color:var(--xh-amber);font-size:20px;font-weight:700;line-height:1;}
+.xh-faq details[open] summary::after{content:"–";}
+.xh-faq details p{font-size:13.8px;color:var(--xh-muted);margin:0 0 16px;}
+.xh-news{display:grid;gap:12px;}
+.xh-news-item{background:#fff;border:1px solid var(--xh-line);border-radius:14px;padding:16px 18px;}
+.xh-news-item time{font-size:12px;color:var(--xh-amber);font-weight:700;}
+.xh-news-item h4{font-size:14.8px;margin:4px 0 4px;}
+.xh-news-item p{font-size:13.2px;color:var(--xh-muted);margin:0;}
+.xh-partners{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;}
+.xh-partner{border:1px dashed var(--xh-line);border-radius:12px;padding:16px;text-align:center;font-weight:800;font-size:14px;color:var(--xh-ink-soft);background:#fff;}
+.xh-partner small{display:block;font-size:11px;font-weight:600;color:var(--xh-muted);letter-spacing:.06em;}
+
+/* ============ 联系投稿 ============ */
+.xh-cta{background:linear-gradient(135deg,var(--xh-ink),#33244d);color:#fff;border-radius:26px;padding:44px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:26px;align-items:center;}
+.xh-cta h2{font-size:clamp(22px,3vw,30px);}
+.xh-cta p{color:#cbbfd8;font-size:14.5px;margin:10px 0 0;max-width:52ch;}
+.xh-cta .xh-btn-solid{background:var(--xh-gold);color:#231a06;box-shadow:none;}
+.xh-cta .xh-btn-solid:hover{background:#ffd75e;}
+
+/* ============ 页脚 ============ */
+.xh-footer{background:var(--xh-ink);color:#bdb3c8;padding:56px 0 26px;margin-top:20px;}
+.xh-footer-grid{display:grid;grid-template-columns:minmax(0,2fr) repeat(3,minmax(0,1fr));gap:30px;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,.12);}
+.xh-footer h4{color:#fff;font-size:14px;margin-bottom:14px;letter-spacing:.08em;}
+.xh-footer p{font-size:13px;line-height:1.8;}
+.xh-footer a{font-size:13px;display:block;padding:5px 0;color:#bdb3c8;transition:color .18s;}
+.xh-footer a:hover{color:var(--xh-gold);}
+.xh-footer .xh-logo{color:#fff;margin-bottom:12px;}
+.xh-footer .xh-logo small{color:#8d8299;}
+.xh-footer-bottom{padding-top:22px;font-size:12.5px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;color:#8d8299;}
+
+/* ============ 返回顶部 / Toast / 弹窗 ============ */
+.xh-top-btn{
+  position:fixed;right:20px;bottom:22px;width:46px;height:46px;border-radius:50%;
+  background:var(--xh-amber);color:#fff;display:grid;place-items:center;font-size:17px;
+  box-shadow:0 12px 26px -14px rgba(255,77,46,.95);opacity:0;pointer-events:none;transition:.25s;z-index:70;
+}
+.xh-top-btn.is-show{opacity:1;pointer-events:auto;}
+.xh-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);z-index:90;
+  background:var(--xh-ink);color:#fff;font-size:13.5px;font-weight:600;padding:12px 22px;border-radius:999px;
+  opacity:0;pointer-events:none;transition:.28s;
+}
+.xh-toast.is-show{opacity:1;transform:translate(-50%,0);}
+.xh-modal{position:fixed;inset:0;z-index:95;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(20,16,24,.55);backdrop-filter:blur(3px);}
+.xh-modal.is-open{display:flex;}
+.xh-modal-box{background:#fff;border-radius:20px;max-width:460px;width:100%;padding:28px;position:relative;}
+.xh-modal-box h3{font-size:19px;margin-bottom:10px;}
+.xh-modal-box p{font-size:14px;color:var(--xh-muted);}
+.xh-modal-box label{display:block;font-size:13px;font-weight:700;margin:14px 0 6px;}
+.xh-modal-box input,.xh-modal-box textarea{
+  width:100%;border:1.5px solid var(--xh-line);border-radius:10px;padding:10px 12px;
+  font-family:inherit;font-size:14px;outline:0;resize:vertical;
+}
+.xh-modal-box input:focus,.xh-modal-box textarea:focus{border-color:var(--xh-amber);}
+.xh-modal-close{position:absolute;right:14px;top:14px;width:32px;height:32px;border-radius:50%;background:var(--xh-paper-2);display:grid;place-items:center;font-size:15px;font-weight:700;}
+.xh-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;}
+.xh-share-row button{border:1.5px solid var(--xh-line);border-radius:10px;padding:9px 14px;font-size:13px;font-weight:700;}
+.xh-share-row button:hover{border-color:var(--xh-amber);color:var(--xh-amber);}
+
+/* ============ 响应式 ============ */
+@media (max-width:980px){
+  .xh-hero-grid,.xh-essay-grid,.xh-feature-grid,.xh-duo{grid-template-columns:minmax(0,1fr);}
+  .xh-essay-aside{position:static;}
+  .xh-topic-grid,.xh-rank-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .xh-authors,.xh-comments-grid{grid-template-columns:minmax(0,1fr);}
+  .xh-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .xh-cta{grid-template-columns:minmax(0,1fr);padding:34px 28px;}
+}
+@media (max-width:760px){
+  :root{--xh-sticky:112px;}
+  .xh-nav-links,.xh-search{display:none;}
+  .xh-burger{display:flex;}
+  .xh-nav{height:70px;}
+  .xh-hero{padding:36px 0 50px;}
+  .xh-stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;}
+  .xh-stat{padding:10px 11px;}
+  .xh-stat b{font-size:21px;}
+  .xh-stat span{font-size:11px;}
+  .xh-video-item{grid-template-columns:minmax(0,1fr);}
+  .xh-video-ops{flex-direction:row;flex-wrap:wrap;}
+  .xh-topic-grid,.xh-rank-grid{grid-template-columns:minmax(0,1fr);}
+  .xh-footer-grid{grid-template-columns:minmax(0,1fr);}
+  .xh-essay article{padding:24px 20px;}
+  .xh-sec{padding:52px 0;}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  .xh-topbar-inner{animation:none;}
+  *{transition:none!important;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头 -->
+<div class="xh-topbar" role="region" aria-label="官方更新公告">
+  <div class="xh-topbar-inner">
+    <span><b>官方发布</b> · 2026 冬季编舞企划《地面之上》开放报名</span><span class="xh-dot"></span>
+    <span>炫舞世家夏柏高清频道上线 4K 舞蹈影像专区</span><span class="xh-dot"></span>
+    <span><b>社区挑战</b> · 「三十秒律动」投稿通道已开启</span><span class="xh-dot"></span>
+    <span>新增 12 部原创作品</span><span class="xh-dot"></span>
+    <span><b>官方发布</b> · 2026 冬季编舞企划《地面之上》开放报名</span><span class="xh-dot"></span>
+    <span>炫舞世家夏柏高清频道上线 4K 舞蹈影像专区</span><span class="xh-dot"></span>
+    <span><b>社区挑战</b> · 「三十秒律动」投稿通道已开启</span><span class="xh-dot"></span>
+    <span>新增 12 部原创作品</span><span class="xh-dot"></span>
+  </div>
+</div>
+
+<header class="xh-header">
+  <div class="xh-wrap">
+    <nav class="xh-nav" aria-label="主导航">
+      <a class="xh-logo" href="#top" aria-label="炫舞世家夏柏官方网站首页">
+        <span class="xh-logo-mark">炫</span>
+        <span>炫舞世家夏柏<small>OFFICIAL VIDEO</small></span>
+      </a>
+      <div class="xh-nav-links">
+        <a href="#essay">品牌解读</a>
+        <a href="#select">精选影片</a>
+        <a href="#topics">专题企划</a>
+        <a href="#authors">创作者</a>
+        <a href="#voices">口碑</a>
+        <a href="#faq">帮助</a>
+      </div>
+      <div class="xh-nav-tools">
+        <form class="xh-search" id="xhSearchForm" role="search">
+          <input type="search" id="xhSearchInput" placeholder="搜索作品 / 创作者" aria-label="站内搜索">
+          <button type="submit" aria-label="提交搜索">⌕</button>
+        </form>
+        <button class="xh-burger" id="xhBurger" aria-label="展开导航菜单" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="xh-mobile-menu" id="xhMobileMenu">
+      <a href="#essay">品牌解读</a>
+      <a href="#select">精选影片</a>
+      <a href="#videos">视频索引</a>
+      <a href="#topics">专题企划</a>
+      <a href="#authors">创作者</a>
+      <a href="#voices">口碑评价</a>
+      <a href="#faq">帮助中心</a>
+      <a href="#join">投稿合作</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- S2 品牌首屏 -->
+  <section class="xh-hero" aria-labelledby="xhHeroTitle">
+    <div class="xh-wrap">
+      <div class="xh-hero-grid">
+        <div>
+          <span class="xh-eyebrow">炫舞世家夏柏 · 官方网站</span>
+          <h1 id="xhHeroTitle">炫舞<em>世家</em>夏柏</h1>
+          <p class="xh-hero-lead">以舞为世家，以影像见真实。</p>
+          <p class="xh-hero-intro">炫舞世家夏柏是一个深耕街舞、现代舞与编舞创作的垂直视频品牌，致力于为创作者与企业搭建高品质内容生态。我们相信每一次起舞都值得被高清记录，官方平台持续运营原创舞蹈影像、创作幕后与人物访谈，让真实的律动与力量被更多人看见。</p>
+          <div class="xh-hero-actions">
+            <a class="xh-btn xh-btn-solid" href="#select">观看精选影片</a>
+            <a class="xh-btn xh-btn-ghost" href="#join">投稿与报名</a>
+          </div>
+          <div class="xh-stats">
+            <div class="xh-stat"><b>1,860+</b><span>原创舞蹈影像</span></div>
+            <div class="xh-stat"><b>214万</b><span>社区创作者关注</span></div>
+            <div class="xh-stat"><b>9 年</b><span>持续运营时长</span></div>
+          </div>
+        </div>
+        <div class="xh-hero-visual">
+          <figure>
+            <img alt="炫舞世家夏柏舞者在暖橙灯光排练厅中完成腾空跃起的瞬间" width="640" height="800" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 800'%3E%3Cdefs%3E%3ClinearGradient id='bg1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23231a2e'/%3E%3Cstop offset='.55' stop-color='%233d2547'/%3E%3Cstop offset='1' stop-color='%238b2f24'/%3E%3C/linearGradient%3E%3CradialGradient id='spot1' cx='.3' cy='.2' r='.8'%3E%3Cstop offset='0' stop-color='%23ffc93c' stop-opacity='.75'/%3E%3Cstop offset='1' stop-color='%23ffc93c' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='640' height='800' fill='url(%23bg1)'/%3E%3Cellipse cx='190' cy='150' rx='300' ry='240' fill='url(%23spot1)'/%3E%3Cpath d='M0 640 Q160 560 320 620 T640 600 L640 800 L0 800Z' fill='%23141018' opacity='.85'/%3E%3Cg stroke='%23ff4d2e' stroke-width='10' fill='none' stroke-linecap='round'%3E%3Cpath d='M300 300 q40 -70 120 -60'/%3E%3Cpath d='M420 240 q60 10 70 80'/%3E%3C/g%3E%3Ccircle cx='320' cy='250' r='34' fill='%23fdfaf6'/%3E%3Cpath d='M300 285 L280 430 L330 470 L360 400 L400 470 L440 420 L400 340 L350 320Z' fill='%23ff4d2e'/%3E%3Cpath d='M300 285 L240 330 L250 400' stroke='%23fdfaf6' stroke-width='20' stroke-linecap='round' fill='none'/%3E%3Cpath d='M400 470 L360 610 L320 640' stroke='%23ffc93c' stroke-width='22' stroke-linecap='round' fill='none'/%3E%3Ccircle cx='150' cy='420' r='9' fill='%23ffc93c' opacity='.9'/%3E%3Ccircle cx='520' cy='380' r='13' fill='%23ff4d2e' opacity='.75'/%3E%3Ccircle cx='540' cy='560' r='7' fill='%23fdfaf6' opacity='.6'/%3E%3Ctext x='40' y='750' fill='%23fdfaf6' font-family='sans-serif' font-size='22' font-weight='bold' opacity='.55'%3ESTAGE 04 / REHEARSAL%3C/text%3E%3C/svg%3E">
+          </figure>
+          <div class="xh-badge-float"><i></i> 4K 高清 · 官方正版</div>
+          <figcaption style="display:none"></figcaption>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 精选焦点 + 视频条目 -->
+  <section class="xh-sec" id="select" aria-labelledby="xhSelectTitle">
+    <div class="xh-wrap">
+      <div class="xh-sec-head">
+        <div>
+          <span class="xh-eyebrow">精选内容</span>
+          <h2 id="xhSelectTitle">本周焦点：炫舞世家夏柏的舞台时刻</h2>
+          <p>由官方编辑部从原创作品中挑选，涵盖编舞、幕后与深度对谈，每一部都保留真实的呼吸与汗水。</p>
+        </div>
+        <a class="xh-btn xh-btn-ghost" href="#videos">查看全部索引</a>
+      </div>
+
+      <div class="xh-feature-grid">
+        <article class="xh-feature-main">
+          <figure>
+            <img alt="炫舞世家夏柏主创团队在剧院舞台完成群舞定格的焦点画面" width="900" height="506" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 506'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23141018'/%3E%3Cstop offset='.6' stop-color='%23432a5c'/%3E%3Cstop offset='1' stop-color='%23c2411f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='900' height='506' fill='url(%23f1)'/%3E%3Cg opacity='.9'%3E%3Crect x='0' y='392' width='900' height='114' fill='%23ff4d2e' opacity='.22'/%3E%3Ccircle cx='200' cy='150' r='70' fill='%23ffc93c' opacity='.25'/%3E%3Ccircle cx='720' cy='120' r='100' fill='%235b3fa8' opacity='.35'/%3E%3C/g%3E%3Cg%3E%3Ccircle cx='450' cy='170' r='26' fill='%23fdfaf6'/%3E%3Cpath d='M430 200 L400 330 L450 360 L500 300 L540 360 L570 320 L520 250 L470 220Z' fill='%23ff4d2e'/%3E%3Cpath d='M400 330 L350 460' stroke='%23fdfaf6' stroke-width='18' stroke-linecap='round'/%3E%3Cpath d='M500 300 L560 210' stroke='%23ffc93c' stroke-width='16' stroke-linecap='round'/%3E%3C/g%3E%3Cg fill='%23fdfaf6' opacity='.5'%3E%3Ccircle cx='300' cy='270' r='18'/%3E%3Crect x='286' y='292' width='28' height='90' rx='12'/%3E%3Ccircle cx='620' cy='290' r='18'/%3E%3Crect x='606' y='312' width='28' height='82' rx='12'/%3E%3C/g%3E%3Ctext x='36' y='60' fill='%23fdfaf6' font-family='sans-serif' font-size='24' font-weight='bold' opacity='.8'%3EORIGINAL FILM%3C/text%3E%3C/svg%3E">
+            <span class="xh-play" aria-hidden="true">▶</span>
+          </figure>
+          <div class="xh-feature-body">
+            <div class="xh-meta"><span>官方发布</span><span>编舞实验</span><span>18:42</span></div>
+            <h3>《地面之上》：把重心交给地面，把身体交给节奏</h3>
+            <p>炫舞世家夏柏冬季重磅原创舞剧影像，六位舞者在同一片地板上交替下沉与起立，用重量讲述成长。全片 4K 拍摄，收录排练到首演的双线剪辑。</p>
+            <div class="xh-meta">
+              <span>作者：夏柏</span>
+              <span>播放 42.6 万</span>
+              <span>点赞 3.8 万</span>
+              <span>收藏 1.9 万</span>
+              <span class="xh-tag">正版高清</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="xh-feature-list">
+          <article class="xh-mini">
+            <img alt="炫舞世家夏柏舞者在落地窗前练习律动的侧影" width="192" height="144" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 144'%3E%3Crect width='192' height='144' fill='%23f4d9c4'/%3E%3Crect x='0' y='0' width='192' height='70' fill='%23ffe9d1'/%3E%3Cpath d='M0 100 Q60 80 96 96 T192 88 L192 144 L0 144Z' fill='%23c2411f'/%3E%3Ccircle cx='96' cy='52' r='16' fill='%23362a3f'/%3E%3Cpath d='M84 72 L72 116 L96 124 L116 104 L128 124 L140 112 L120 84Z' fill='%23362a3f'/%3E%3Ccircle cx='46' cy='38' r='30' fill='%23ffffff' opacity='.35'/%3E%3C/svg%3E">
+            <div>
+              <h4>膝盖保卫战：街舞基础课三</h4>
+              <p>从落地缓冲到重心迁移，夏柏拆解 12 个常见错误。</p>
+              <div class="xh-meta"><span>播放 12.4 万</span><span>点赞 8,206</span></div>
+            </div>
+          </article>
+          <article class="xh-mini">
+            <img alt="炫舞世家夏柏采访镜头中舞者与镜头对话的半身画面" width="192" height="144" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 144'%3E%3Crect width='192' height='144' fill='%232b2140'/%3E%3Ccircle cx='96' cy='60' r='34' fill='%23ffc93c' opacity='.8'/%3E%3Ccircle cx='96' cy='60' r='22' fill='%232b2140'/%3E%3Crect x='70' y='96' width='52' height='48' rx='10' fill='%23fdfaf6'/%3E%3Crect x='16' y='16' width='52' height='6' rx='3' fill='%23ff4d2e'/%3E%3Crect x='16' y='30' width='30' height='5' rx='2.5' fill='%23fdfaf6' opacity='.6'/%3E%3C/svg%3E">
+            <div>
+              <h4>访谈：编舞不是编排，而是提问</h4>
+              <p>夏柏聊创作方法与团队协作，40 分钟完整对谈。</p>
+              <div class="xh-meta"><span>播放 9.7 万</span><span>点赞 6,113</span></div>
+            </div>
+          </article>
+          <article class="xh-mini">
+            <img alt="炫舞世家夏柏夜间城市街头舞者剪影的影像封面" width="192" height="144" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 144'%3E%3Crect width='192' height='144' fill='%23141826'/%3E%3Crect x='0' y='86' width='192' height='58' fill='%23212d44'/%3E%3Ccircle cx='140' cy='38' r='20' fill='%23ffe08a'/%3E%3Cpath d='M70 132 L78 96 L96 88 L112 100 L118 132Z' fill='%23ff4d2e'/%3E%3Cpath d='M78 96 L56 78' stroke='%23ff4d2e' stroke-width='8' stroke-linecap='round'/%3E%3Cg fill='%23ffd23f'%3E%3Ccircle cx='24' cy='30' r='2.5'/%3E%3Ccircle cx='52' cy='48' r='2'/%3E%3Ccircle cx='170' cy='70' r='2.5'/%3E%3C/g%3E%3C/svg%3E">
+            <div>
+              <h4>城市探索：从地下通道到剧场</h4>
+              <p>拍摄团队跟随舞者，记录街舞进剧场的十年现场。</p>
+              <div class="xh-meta"><span>播放 15.2 万</span><span>点赞 1.1 万</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌解读（关键词解析 800 字以上） -->
+  <section class="xh-essay" id="essay" aria-labelledby="xhEssayTitle">
+    <div class="xh-wrap xh-sec">
+      <div class="xh-essay-grid">
+        <aside class="xh-essay-aside">
+          <span class="xh-eyebrow">品牌解读</span>
+          <h2 id="xhEssayTitle">读懂炫舞世家夏柏</h2>
+          <p>一个以视频为载体的舞蹈品牌，如何把舞台、社区与内容生态连接在一起。</p>
+          <div class="xh-essay-tags">
+            <span class="xh-tag">街舞</span>
+            <span class="xh-tag">编舞</span>
+            <span class="xh-tag">原创影像</span>
+            <span class="xh-tag">创作者社区</span>
+            <span class="xh-tag">品牌故事</span>
+          </div>
+        </aside>
+        <article>
+          <h3><span>01</span> 从一间排练厅出发：炫舞世家夏柏的品牌底色</h3>
+          <p>炫舞世家夏柏并不是从一张商业计划书开始的，而是从一间冬天漏风、夏天闷热的排练厅开始的。2017 年，几位常年在城市街舞圈里磨合的舞者把这里当作固定的聚集地，白天教课，晚上排练，地板被磨得发亮，镜子边缘贴着胶带。那时候没有人想到，这个小小的据点会变成一个以视频为核心的舞蹈品牌。</p>
+          <p>最早的三部作品都是手机拍摄、单机位记录，画面并不精致，但保留了排练时真实的喘息与笑声。上线之后，评论区里出现了大量“我也在练这个动作”“原来这个问题不只我有”的留言，团队意识到：舞蹈内容真正的价值不是炫技，而是让同好看见彼此。于是“官方记录、真实表达”成为炫舞世家夏柏最初的品牌原则，也一直延续到今天。</p>
+          <p>如今的炫舞世家夏柏已经是一个持续运营的垂直领域视频品牌，拥有稳定的拍摄与后期团队、固定的内容排期和不断扩大的创作者社区。我们仍然坚持在每一条视频的开头标注排练编号与拍摄日期，因为对舞者来说，身体的状态就是最诚实的时间戳。这种对真实的坚持，让品牌在行业里积累了值得信赖的口碑。</p>
+
+          <h3><span>02</span> 内容生态是如何长出来的：从作品到社区</h3>
+          <p>炫舞世家夏柏的内容生态可以拆成四条线：第一条是原创舞蹈影像，从 16:9 的舞剧长片到 30 秒的律动短章，全部由官方团队持机拍摄，保证正版高清；第二条是教程干货，创作者把技巧、体能、恢复与舞台经验拆解为可实践的方法；第三条是人物访谈，让幕后编舞、灯光、音乐人获得表达空间；第四条是社区互动，通过标签筛选与投稿入口，把观众变成参与者。</p>
+          <p>这四条线并不是平行推进的，而是互相喂养。一支舞剧长片上线后，评论里最常见的追问是“这个转体怎么练”，于是教程团队顺势产出分解视频；教程的反馈又会倒逼创作者调整编排，让作品更适合被学习与模仿。社区因此不是流量的容器，而是内容生产的合作者。我们给投稿作品配备基础的剪辑建议与上传说明，也会在官方频道做联展，让新面孔获得曝光。</p>
+          <p>内容生态的另一个支撑是标准化。炫舞世家夏柏给每一条视频标注了统一的信息结构：标题、摘要、标签、作者、播放与互动数据、操作入口。看起来只是形式，但它让用户能快速判断“这是不是我要看的”，也让创作者知道平台在意什么。这种秩序感，是一个企业级视频品牌与随手拍账号的分水岭。</p>
+          <div class="xh-quote">“我们不生产完美无瑕的身体，我们记录愿意继续练下去的人。”——炫舞世家夏柏创作手记</div>
+
+          <h3><span>03</span> 品牌故事里的关键词：世家、夏柏与炫舞</h3>
+          <p>“世家”二字在品牌内部被反复讨论过。它并不指血缘传承，而是指一种长时间的相处：同一批人、同一块地板、同一套审美，熬过一年又一年。炫舞世家夏柏希望呈现的正是这种“长时间”的价值——舞蹈不是速成的技能，而是需要身体与心智同步成长的手艺。</p>
+          <p>“夏柏”则是品牌主理人兼首席编舞的名字，也是很多观众认识这个品牌的第一个窗口。她的作品偏爱地面动作与呼吸控制，强调在低重心里找到力量，这种风格影响了社区里大量年轻舞者的表达方式。以人名作为品牌名的一部分，意味着责任：官方发布的每一条内容都要经得起“夏柏看过”的检验，这也是品牌对品质的自我约束。</p>
+          <p>“炫舞”则更直接，它指向舞台的能量与观赏性。但炫舞世家夏柏始终提醒自己，炫不等于浮夸。我们更愿意把“炫”理解为一种自信——舞者知道自己为什么动，也知道什么时候停。正是这种分寸感，让品牌在商业合作与艺术表达之间保持了平衡，也让更多企业与机构愿意把内容交给这支团队。行业领先不只是数据，更是一种稳定的审美判断力。</p>
+
+          <h3><span>04</span> 面向未来：把舞台还给更多人</h3>
+          <p>接下来的一年，炫舞世家夏柏会把重点放在三件事上。一是继续扩充 4K 舞蹈影像专区，让高质量的记录成为社区标配；二是把比赛与挑战做得更开放，降低报名门槛，鼓励第一次跳舞的人上传作品；三是完善创作者扶持，从脚本灵感、标题建议到剪辑思路，形成可复用的创作工具箱，让内容生产不再依赖少数人的灵感爆发。</p>
+          <p>我们也在尝试更多元的合作：与城市文化空间联合办放映，与音乐人共创现场，与高校社团建立长期陪伴计划。这些动作看起来分散，但指向同一个目标——让舞蹈影像成为城市文化生活的一部分，而不只是流量池里的一个标签。社会责任在这里不是一句口号，而是具体地把场地、设备与经验分享给更多年轻人。</p>
+          <p>炫舞世家夏柏始终相信，一个品牌的厚度来自它愿意记录什么。我们记录汗水、失误、重来，也记录灯光亮起时那几秒钟的安静。官网是这些记录的长期存放处，也是社区的入口。欢迎你在这里找到喜欢的作品，更欢迎你成为下一条视频里的那个人。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- M3 热门视频流（文字列表为主） -->
+  <section class="xh-sec" id="videos" aria-labelledby="xhVideosTitle" style="padding-top:0;">
+    <div class="xh-wrap">
+      <div class="xh-sec-head">
+        <div>
+          <span class="xh-eyebrow">视频索引</span>
+          <h2 id="xhVideosTitle">炫舞世家夏柏社区热播</h2>
+          <p>文字索引优先呈现信息本身：标题、摘要、标签、作者与真实互动数据。点击按钮可点赞或收藏，数据即时变化。</p>
+        </div>
+      </div>
+      <div class="xh-video-list">
+
+        <article class="xh-video-item">
+          <div>
+            <h4><span class="xh-no">01</span>三十秒律动：把地铁站的等待跳成一段舞</h4>
+            <p>社区挑战优秀作品，三机位记录傍晚通勤时分的即兴律动，剪辑克制，保留环境声。</p>
+            <div class="xh-video-tags"><span>社区挑战</span><span>即兴</span><span>城市探索</span></div>
+            <div class="xh-video-data"><span>作者：阿洛不困</span><span>播放 8.9 万</span><span>点赞 5,412</span><span>收藏 1,208</span></div>
+          </div>
+          <div class="xh-video-ops">
+            <button class="xh-mini-btn" data-xh-like data-count="5412">♡ 点赞</button>
+            <button class="xh-mini-btn" data-xh-fav>☆ 收藏</button>
+            <button class="xh-mini-btn" data-xh-share>↗ 分享</button>
+          </div>
+        </article>
+
+        <article class="xh-video-item">
+          <div>
+            <h4><span class="xh-no">02</span>地面动作入门：三个不伤腰的过渡技巧</h4>
+            <p>从脊柱分节到肩胛支撑，编舞助教用慢镜头拆解初学阶段最容易塌腰的环节。</p>
+            <div class="xh-video-tags"><span>教程干货</span><span>实用技巧</span><span>健康运动</span></div>
+            <div class="xh-video-data"><span>作者：木木练习簿</span><span>播放 21.3 万</span><span>点赞 1.8 万</span><span>收藏 9,044</span></div>
+          </div>
+          <div class="xh-video-ops">
+            <button class="xh-mini-btn" data-xh-like data-count="18320">♡ 点赞</button>
+            <button class="xh-mini-btn" data-xh-fav>☆ 收藏</button>
+            <button class="xh-mini-btn" data-xh-share>↗ 分享</button>
+          </div>
+        </article>
+
+        <article class="xh-video-item">
+          <div>
+            <h4><span class="xh-no">03</span>创作幕后：一支八人齐舞如何在一周内成型</h4>
+            <p>排练日志式记录，包含走位调整、音乐切分与队形争执的真实片段，不美化过程。</p>
+            <div class="xh-video-tags"><span>创作幕后</span><span>编舞实验</span><span>团队协作</span></div>
+            <div class="xh-video-data"><span>作者：夏柏</span><span>播放 33.7 万</span><span>点赞 2.9 万</span><span>收藏 1.4 万</span></div>
+          </div>
+          <div class="xh-video-ops">
+            <button class="xh-mini-btn" data-xh-like data-count="29166">♡ 点赞</button>
+            <button class="xh-mini-btn" data-xh-fav>☆ 收藏</button>
+            <button class="xh-mini-btn" data-xh-share>↗ 分享</button>
+          </div>
+        </article>
+
+        <article class="xh-video-item">
+          <div>
+            <h4><span class="xh-no">04</span>在地文化：老城区天台上的南音与律动</h4>
+            <p>把传统曲牌采样进舞曲，舞者在天台与骑楼之间穿梭，是一次跨界的在地表达。</p>
+            <div class="xh-video-tags"><span>在地文化</span><span>音乐现场</span><span>艺术美学</span></div>
+            <div class="xh-video-data"><span>作者：南风阿岚</span><span>播放 17.6 万</span><span>点赞 1.2 万</span><span>收藏 6,750</span></div>
+          </div>
+          <div class="xh-video-ops">
+            <button class="xh-mini-btn" data-xh-like data-count="12035">♡ 点赞</button>
+            <button class="xh-mini-btn" data-xh-fav>☆ 收藏</button>
+            <button class="xh-mini-btn" data-xh-share>↗ 分享</button>
+          </div>
+        </article>
+
+        <article class="xh-video-item">
+          <div>
+            <h4><span class="xh-no">05</span>人物访谈：从会计到职业舞者，她用了六年</h4>
+            <p>一次不设提纲的长谈，聊转行的现实成本、家人的态度与身体的自我管理。</p>
+            <div class="xh-video-tags"><span>人物访谈</span><span>情感故事</span><span>职场日常</span></div>
+            <div class="xh-video-data"><span>作者：木木练习簿</span><span>播放 11.2 万</span><span>点赞 8,830</span><span>收藏 4,102</span></div>
+          </div>
+          <div class="xh-video-ops">
+            <button class="xh-mini-btn" data-xh-like data-count="8830">♡ 点赞</button>
+            <button class="xh-mini-btn" data-xh-fav>☆ 收藏</button>
+            <button class="xh-mini-btn" data-xh-share>↗ 分享</button>
+          </div>
+        </article>
+
+        <article class="xh-video-item">
+          <div>
+            <h4><span class="xh-no">06</span>深度测评：五种舞蹈地胶的真实脚感对比</h4>
+            <p>在统一温度与湿度条件下测试回弹、摩擦与滑动，给排练空间的采购提供参考。</p>
+            <div class="xh-video-tags"><span>深度测评</span><span>排练空间</span><span>实用技巧</span></div>
+            <div class="xh-video-data"><span>作者：阿洛不困</span><span>播放 6.4 万</span><span>点赞 3,977</span><span>收藏 2,588</span></div>
+          </div>
+          <div class="xh-video-ops">
+            <button class="xh-mini-btn" data-xh-like data-count="3977">♡ 点赞</button>
+            <button class="xh-mini-btn" data-xh-fav>☆ 收藏</button>
+            <button class="xh-mini-btn" data-xh-share>↗ 分享</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="xh-sec" id="topics" aria-labelledby="xhTopicsTitle" style="background:var(--xh-paper-2);">
+    <div class="xh-wrap">
+      <div class="xh-sec-head">
+        <div>
+          <span class="xh-eyebrow">专题企划</span>
+          <h2 id="xhTopicsTitle">正在更新的炫舞世家夏柏企划</h2>
+          <p>由官方发起、社区共创的长期内容计划，每个专题都在持续收录新作品。</p>
+        </div>
+      </div>
+      <div class="xh-topic-grid">
+
+        <article class="xh-topic">
+          <figure>
+            <img alt="炫舞世家夏柏冬季企划地面之上专题封面以地板纹理为背景" width="640" height="360" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23231a2e'/%3E%3Cg stroke='%23ff4d2e' stroke-width='2' opacity='.35'%3E%3Cpath d='M0 60 H640 M0 120 H640 M0 180 H640 M0 240 H640 M0 300 H640'/%3E%3Cpath d='M80 0 V360 M180 0 V360 M280 0 V360 M380 0 V360 M480 0 V360 M580 0 V360'/%3E%3C/g%3E%3Ccircle cx='320' cy='180' r='72' fill='none' stroke='%23ffc93c' stroke-width='6'/%3E%3Cpath d='M290 220 Q320 120 360 200' stroke='%23fdfaf6' stroke-width='12' fill='none' stroke-linecap='round'/%3E%3Ctext x='40' y='330' fill='%23fdfaf6' font-size='20' font-family='sans-serif' font-weight='bold' opacity='.65'%3EWINTER PROJECT%3C/text%3E%3C/svg%3E">
+          </figure>
+          <span class="xh-topic-state">更新中 · 第 3 期</span>
+          <h3>《地面之上》冬季编舞企划</h3>
+          <p>围绕低重心与地面动作展开的六周共创计划，从排练到公演全程影像记录。</p>
+          <ul>
+            <li>第 1 期：重心迁移的十二种练习</li>
+            <li>第 2 期：八人齐舞的队形与呼吸</li>
+            <li>第 3 期：首演夜的完整舞台影像</li>
+          </ul>
+        </article>
+
+        <article class="xh-topic">
+          <span class="xh-topic-state">更新中 · 每周四</span>
+          <h3>三十秒律动 · 社区挑战</h3>
+          <p>面向所有爱好者的短影像挑战，鼓励用最少的设备记录最真实的律动。</p>
+          <ul>
+            <li>第 18 周主题：通勤路上的即兴</li>
+            <li>第 19 周主题：只用一盏灯拍舞蹈</li>
+            <li>第 20 周主题：和家人共舞三十秒</li>
+          </ul>
+        </article>
+
+        <article class="xh-topic">
+          <figure>
+            <img alt="炫舞世家夏柏创作者对谈专题封面以对话气泡与声波构成" width="640" height="360" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%235b3fa8'/%3E%3Crect x='70' y='80' width='220' height='120' rx='24' fill='%23fdfaf6'/%3E%3Cpath d='M120 200 L110 240 L160 200Z' fill='%23fdfaf6'/%3E%3Crect x='340' y='150' width='230' height='120' rx='24' fill='%23ffc93c'/%3E%3Cpath d='M520 270 L530 310 L480 270Z' fill='%23ffc93c'/%3E%3Cg stroke='%23ff4d2e' stroke-width='5' stroke-linecap='round'%3E%3Cpath d='M110 130 h60'/%3E%3Cpath d='M110 156 h110'/%3E%3C/g%3E%3Cg stroke='%235b3fa8' stroke-width='5' stroke-linecap='round'%3E%3Cpath d='M380 200 h80'/%3E%3Cpath d='M380 228 h130'/%3E%3C/g%3E%3C/svg%3E">
+          </figure>
+          <span class="xh-topic-state">更新中 · 双周</span>
+          <h3>对谈：编舞者的提问方式</h3>
+          <p>邀请不同背景的编舞与音乐人对话，聊方法、审美与行业观察。</p>
+          <ul>
+            <li>夏柏 × 灯光设计师：让身体被看见</li>
+            <li>夏柏 × 独立音乐人：节拍之外</li>
+            <li>夏柏 × 剧场制作人：作品如何被巡演</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵 -->
+  <section class="xh-sec" id="authors" aria-labelledby="xhAuthorsTitle">
+    <div class="xh-wrap">
+      <div class="xh-sec-head">
+        <div>
+          <span class="xh-eyebrow">创作者矩阵</span>
+          <h2 id="xhAuthorsTitle">在炫舞世家夏柏持续创作的人</h2>
+          <p>他们是编舞、舞者、拍摄者与写作者，也是社区里最稳定的内容合作者。</p>
+        </div>
+        <a class="xh-btn xh-btn-ghost" href="#join">申请成为创作者</a>
+      </div>
+      <div class="xh-authors">
+
+        <article class="xh-author">
+          <div class="xh-ava" style="background:linear-gradient(135deg,#ff4d2e,#ffc93c)">夏</div>
+          <div>
+            <h3>夏柏 <small>首席编舞</small></h3>
+            <div class="xh-field">地面动作 · 舞剧编排 · 舞台叙事</div>
+            <p>炫舞世家夏柏主理人，偏好低重心与呼吸控制，作品强调身体重量与情绪的对应关系。九年间编创二十余部舞台作品，长期为年轻舞者提供排练与创作指导。</p>
+            <div class="xh-author-data"><span>作品 214</span><span>关注 38.7 万</span></div>
+            <button class="xh-author-btn" data-xh-author="夏柏|首席编舞，擅长地面动作与舞剧编排。坚持“官方记录、真实表达”的创作原则，希望让舞蹈影像成为城市文化的一部分。">查看简介 →</button>
+          </div>
+        </article>
+
+        <article class="xh-author">
+          <div class="xh-ava" style="background:linear-gradient(135deg,#5b3fa8,#8b6bd8)">木</div>
+          <div>
+            <h3>木木练习簿</h3>
+            <div class="xh-field">教程拆解 · 体能训练 · 伤后恢复</div>
+            <p>前运动康复专业学生，现为全职舞蹈教师。擅长把复杂动作拆成可执行的小步骤，教程以清晰和耐心著称，被社区称为“最会讲人话的技巧博主”。</p>
+            <div class="xh-author-data"><span>作品 136</span><span>关注 24.1 万</span></div>
+            <button class="xh-author-btn" data-xh-author="木木练习簿|舞蹈教师，专注教程拆解与体能训练。擅长把技巧写成可实践的步骤，也长期分享伤后恢复与日常保养经验。">查看简介 →</button>
+          </div>
+        </article>
+
+        <article class="xh-author">
+          <div class="xh-ava" style="background:linear-gradient(135deg,#178a4b,#6fce9b)">阿</div>
+          <div>
+            <h3>阿洛不困</h3>
+            <div class="xh-field">城市探索 · 即兴拍摄 · 器材测评</div>
+            <p>常年在城市里寻找可以跳舞的角落，天台、地下通道、旧码头都出现在他的作品里。对器材与空间声学有近乎固执的兴趣，作品节奏轻快。</p>
+            <div class="xh-author-data"><span>作品 98</span><span>关注 19.6 万</span></div>
+            <button class="xh-author-btn" data-xh-author="阿洛不困|城市即兴创作者，热爱在非标准空间拍摄舞蹈。作品多关注城市角落的声音与光线变化，也会分享轻量设备的实测经验。">查看简介 →</button>
+          </div>
+        </article>
+
+        <article class="xh-author">
+          <div class="xh-ava" style="background:linear-gradient(135deg,#c2411f,#ff8a5c)">南</div>
+          <div>
+            <h3>南风阿岚</h3>
+            <div class="xh-field">在地文化 · 音乐采样 · 跨界合作</div>
+            <p>从传统曲牌里寻找舞曲的骨架，擅长把地方声音采样进作品。她的影像常带一点潮湿的南方气息，关注文化的迁徙与再生长。</p>
+            <div class="xh-author-data"><span>作品 71</span><span>关注 15.3 万</span></div>
+            <button class="xh-author-btn" data-xh-author="南风阿岚|跨界创作者，长期研究传统音乐与当代舞的结合。作品强调在地性，常在旧街区与自然场景中完成拍摄与录音。">查看简介 →</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- M14 榜单 + M8 评论 -->
+  <section class="xh-sec" id="voices" aria-labelledby="xhVoicesTitle" style="background:var(--xh-paper-2);">
+    <div class="xh-wrap">
+      <div class="xh-sec-head">
+        <div>
+          <span class="xh-eyebrow">社区口碑</span>
+          <h2 id="xhVoicesTitle">榜单与真实评价</h2>
+          <p>口碑来自长期观察，也来自每一条具体而微小的观看体验。</p>
+        </div>
+      </div>
+
+      <div class="xh-rank-grid" style="margin-bottom:34px;">
+        <div class="xh-rank-card">
+          <h3><i>热</i>本周热度榜</h3>
+          <ol>
+            <li><b>《地面之上》首演完整版</b><em>42.6万</em></li>
+            <li><b>创作幕后：八人齐舞一周记</b><em>33.7万</em></li>
+            <li><b>地面动作入门三技巧</b><em>21.3万</em></li>
+            <li><b>从会计到职业舞者访谈</b><em>11.2万</em></li>
+          </ol>
+        </div>
+        <div class="xh-rank-card">
+          <h3><i>新</i>新人榜</h3>
+          <ol>
+            <li><b>阿洛不困 · 地铁站三十秒</b><em>+1,204</em></li>
+            <li><b>小周不加班 · 车库律动</b><em>+986</em></li>
+            <li><b>橘子和鼓 · 阳台拍打</b><em>+742</em></li>
+            <li><b>木木练习簿 · 肩颈热身</b><em>+615</em></li>
+          </ol>
+        </div>
+        <div class="xh-rank-card">
+          <h3><i>评</i>口碑榜</h3>
+          <ol>
+            <li><b>《对谈：编舞者的提问方式》</b><em>4.9</em></li>
+            <li><b>《地面之上》舞台影像</b><em>4.8</em></li>
+            <li><b>五种舞蹈地胶测评</b><em>4.7</em></li>
+            <li><b>老城区天台南音短片</b><em>4.7</em></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="xh-comments-grid">
+        <article class="xh-comment xh-quote-comment">
+          <div class="xh-comment-head">
+            <div class="xh-ava" style="background:linear-gradient(135deg,#ff4d2e,#ffc93c)">林</div>
+            <div><b>林一溪</b><span>练舞第四年</span></div>
+            <div class="xh-stars">★★★★★</div>
+          </div>
+          <p>“最喜欢炫舞世家夏柏的一点是，它从不假装跳舞是轻松的。那些失败的重来被保留下来，反而让我更愿意继续练。”</p>
+        </article>
+
+        <article class="xh-comment">
+          <div class="xh-comment-head">
+            <div class="xh-ava" style="background:linear-gradient(135deg,#5b3fa8,#8b6bd8)">周</div>
+            <div><b>周末不加班</b><span>社区投稿者</span></div>
+            <div class="xh-stars">★★★★★</div>
+          </div>
+          <p>第一次投稿就被官方频道推荐了，编辑还给我写了两条剪辑建议，很具体，不是客套话。感觉这个平台是真的在看作品。</p>
+        </article>
+
+        <article class="xh-comment">
+          <div class="xh-comment-head">
+            <div class="xh-ava" style="background:linear-gradient(135deg,#178a4b,#6fce9b)">陈</div>
+            <div><b>陈默</b><span>排练空间主理人</span></div>
+            <div class="xh-stars">★★★★☆</div>
+          </div>
+          <p>地胶测评那期对我们很有用，帮我们省了一笔试错成本。就是希望更新能再快一点，年底采购季真的等不及。</p>
+        </article>
+
+        <article class="xh-comment">
+          <div class="xh-comment-head">
+            <div class="xh-ava" style="background:linear-gradient(135deg,#c2411f,#ff8a5c)">苏</div>
+            <div><b>苏叶</b><span>剧场所在地观众</span></div>
+            <div class="xh-stars">★★★★★</div>
+          </div>
+          <p>《地面之上》首演我在现场，回来又看了官方影像，镜头比我的记忆更完整。特别是那段八个人的呼吸声，处理得非常克制。</p>
+        </article>
+
+        <article class="xh-comment">
+          <div class="xh-comment-head">
+            <div class="xh-ava" style="background:linear-gradient(135deg,#232d44,#5f7aa8)">阿</div>
+            <div><b>阿岚的邻居</b><span>路人观众</span></div>
+            <div class="xh-stars">★★★★☆</div>
+          </div>
+          <p>本来只是随便点开，结果一口气看了六条。不怎么懂舞蹈也能看懂，这点很难得，说明是认真做过叙事的。</p>
+        </article>
+
+        <article class="xh-comment">
+          <div class="xh-comment-head">
+            <div class="xh-ava" style="background:linear-gradient(135deg,#8a5a1f,#d9a441)">h</div>
+            <div><b>hebi_212</b><span>自学三个月</span></div>
+            <div class="xh-stars">★★★★★</div>
+          </div>
+          <p>教程里的慢镜头太关键了，尤其是肩胛支撑那一段，看了三遍终于找到感觉。希望能出膝盖保护的专题。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 辅助区：FAQ + 企业动态 + 合作 -->
+  <section class="xh-sec" id="faq" aria-labelledby="xhFaqTitle">
+    <div class="xh-wrap">
+      <div class="xh-sec-head">
+        <div>
+          <span class="xh-eyebrow">帮助与动态</span>
+          <h2 id="xhFaqTitle">关于炫舞世家夏柏的常见问题</h2>
+          <p>投稿、版权、合作与内容更新，都能在这里找到答案。</p>
+        </div>
+      </div>
+
+      <div class="xh-duo">
+        <div class="xh-faq">
+          <details open>
+            <summary>如何向炫舞世家夏柏投稿？</summary>
+            <p>在页面底部“投稿与合作”入口填写作品标题、简介与文件信息，官方编辑会在三个工作日内回复。建议提交原始分辨率的文件，并附上拍摄时间与场地说明，便于我们做基础校验与联展排期。</p>
+          </details>
+          <details>
+            <summary>上传的作品版权归谁？</summary>
+            <p>作品版权始终归创作者所有。炫舞世家夏柏仅在你授权范围内使用，包括官方频道展映与专题收录；如需二次商业使用，我们会单独签署授权并明确分成，这也是品牌对正版与原创的基本尊重。</p>
+          </details>
+          <details>
+            <summary>官网的视频可以下载吗？</summary>
+            <p>官方发布的教程与企划部分作品提供高清下载，用于个人练习与非商业分享；舞剧长片与商业合作内容仅支持在线观看。下载入口会在作品页标注，请勿移除片头的创作者信息。</p>
+          </details>
+          <details>
+            <summary>社区挑战和比赛如何报名？</summary>
+            <p>每期挑战都会在公告条与专题区公布主题与截止时间。报名只需提交一段不超过三十秒的视频，无需专业设备；评审由官方编辑与社区创作者共同参与，结果会在榜单区公布并附上评语。</p>
+          </details>
+          <details>
+            <summary>没有舞蹈基础，适合从这里开始吗？</summary>
+            <p>非常适合。炫舞世家夏柏的教程按难度分层，从零基础的热身与重心练习到进阶编舞都有覆盖。建议先看“地面动作入门”系列，配合体能训练视频，循序渐进，不必一开始就追求完成度。</p>
+          </details>
+          <details>
+            <summary>品牌合作与场地联展怎么联系？</summary>
+            <p>可点击页面底部的“联系官方”按钮，说明合作类型、时间与预算范围。我们更关注内容本身是否成立，而不是单纯的曝光量，因此会优先考虑能产生长期作品的合作方式。</p>
+          </details>
+        </div>
+
+        <div>
+          <h3 style="font-size:17px;margin-bottom:14px;">企业动态</h3>
+          <div class="xh-news">
+            <article class="xh-news-item">
+              <time>2026 / 11 / 18</time>
+              <h4>4K 舞蹈影像专区正式上线</h4>
+              <p>首批收录 42 部原创作品，支持清晰度切换与章节跳转。</p>
+            </article>
+            <article class="xh-news-item">
+              <time>2026 / 11 / 09</time>
+              <h4>冬季企划《地面之上》开放报名</h4>
+              <p>面向 18 岁以上舞者，六周共创，公演影像将在官网首播。</p>
+            </article>
+            <article class="xh-news-item">
+              <time>2026 / 10 / 27</time>
+              <h4>创作者扶持计划第二期启动</h4>
+              <p>提供脚本灵感库、剪辑思路与场地支持，优先面向新投稿作者。</p>
+            </article>
+            <article class="xh-news-item">
+              <time>2026 / 10 / 12</time>
+              <h4>与三家城市文化空间达成联展合作</h4>
+              <p>社区优秀短片将在年末进入线下放映，具体场次另行公告。</p>
+            </article>
+          </div>
+          <h3 style="font-size:17px;margin:26px 0 14px;">合作品牌</h3>
+          <div class="xh-partners">
+            <div class="xh-partner">地胶实验室<small>排练空间支持</small></div>
+            <div class="xh-partner">回声录音棚<small>音乐共创</small></div>
+            <div class="xh-partner">旧城剧场<small>展演合作</small></div>
+            <div class="xh-partner">晨光运动<small>体能装备</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 投稿入口 -->
+  <section class="xh-sec" id="join" aria-labelledby="xhJoinTitle" style="padding-top:0;">
+    <div class="xh-wrap">
+      <div class="xh-cta">
+        <div>
+          <h2 id="xhJoinTitle">把你的三十秒交给炫舞世家夏柏</h2>
+          <p>无论你在地下车库、天台还是客厅，只要有律动，就值得被记录。投稿作品将进入官方审阅队列，优秀作品会获得首页联展与创作者扶持。</p>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <button class="xh-btn xh-btn-solid" data-xh-open="submit">我要投稿</button>
+          <button class="xh-btn xh-btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.55)" data-xh-open="contact">联系官方</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- S8 页脚 -->
+<footer class="xh-footer" aria-label="站点页脚">
+  <div class="xh-wrap">
+    <div class="xh-footer-grid">
+      <div>
+        <a class="xh-logo" href="#top">
+          <span class="xh-logo-mark">炫</span>
+          <span>炫舞世家夏柏<small>OFFICIAL VIDEO</small></span>
+        </a>
+        <p>炫舞世家夏柏官方网站 · 一个持续运营的舞蹈视频品牌。我们以原创与正版为核心，深耕街舞与编舞影像，为创作者与企业搭建值得信赖的内容生态。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <a href="#select">精选影片</a>
+        <a href="#videos">视频索引</a>
+        <a href="#topics">专题企划</a>
+        <a href="#authors">创作者矩阵</a>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <a href="#join">投稿入口</a>
+        <a href="#voices">社区榜单</a>
+        <a href="#faq">帮助中心</a>
+        <a href="#top">回到首页</a>
+      </div>
+      <div>
+        <h4>官方</h4>
+        <a href="#essay">品牌故事</a>
+        <a href="#faq">企业动态</a>
+        <a href="#faq">合作与联展</a>
+        <a href="#join">联系我们</a>
+      </div>
+    </div>
+    <div class="xh-footer-bottom">
+      <span>© 2026 炫舞世家夏柏 版权所有 · 持续运营中</span>
+      <span>品牌备案号：XHSJ-XB-2026-0427 · 官方发布 未经授权禁止转载</span>
+    </div>
+  </div>
+</footer>
+
+<button class="xh-top-btn" id="xhTopBtn" aria-label="回到顶部">↑</button>
+<div class="xh-toast" id="xhToast" role="status" aria-live="polite"></div>
+
+<!-- 通用弹窗 -->
+<div class="xh-modal" id="xhModal" role="dialog" aria-modal="true" aria-labelledby="xhModalTitle">
+  <div class="xh-modal-box">
+    <button class="xh-modal-close" id="xhModalClose" aria-label="关闭弹窗">✕</button>
+    <h3 id="xhModalTitle">标题</h3>
+    <div id="xhModalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端导航折叠 */
+  var burger = document.getElementById('xhBurger');
+  var mobileMenu = document.getElementById('xhMobileMenu');
+  burger.addEventListener('click', function(){
+    var open = mobileMenu.classList.toggle('is-open');
+    burger.classList.toggle('is-open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mobileMenu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      mobileMenu.classList.remove('is-open');
+      burger.classList.remove('is-open');
+      burger.setAttribute('aria-expanded','false');
+    });
+  });
+
+  /* Toast */
+  var toastEl = document.getElementById('xhToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-show'); }, 2200);
+  }
+
+  /* 搜索提示 */
+  var searchForm = document.getElementById('xhSearchForm');
+  var searchInput = document.getElementById('xhSearchInput');
+  var tipBox = document.createElement('div');
+  tipBox.className = 'xh-search-tip';
+  searchForm.parentNode.appendChild(tipBox);
+  var searchPool = ['地面之上','地面动作入门','三十秒律动','创作者访谈','地胶测评','城市探索','南音与律动','夏柏'];
+  searchForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var q = searchInput.value.trim();
+    if(!q){ tipBox.textContent = '请输入作品名、创作者或标签关键词'; return; }
+    var hits = searchPool.filter(function(k){ return k.indexOf(q) > -1 || q.indexOf(k) > -1; });
+    if(hits.length){
+      tipBox.textContent = '已为你匹配 ' + hits.length + ' 个相关词条：' + hits.slice(0,4).join(' / ');
+    } else {
+      tipBox.textContent = '暂未收录“' + q + '”，可尝试：地面之上 / 教程 / 访谈';
+    }
+  });
+
+  /* 点赞 +1 / 收藏切换 + 分享 */
+  document.querySelectorAll('[data-xh-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var base = parseInt(btn.getAttribute('data-count'), 10) || 0;
+      var on = btn.classList.toggle('is-on');
+      var num = on ? base + 1 : base;
+      btn.textContent = (on ? '♥ ' : '♡ ') + '点赞 ' + num.toLocaleString('en-US');
+      toast(on ? '感谢点赞，已记录到你的偏好' : '已取消点赞');
+    });
+    var base0 = parseInt(btn.getAttribute('data-count'), 10) || 0;
+    btn.textContent = '♡ 点赞 ' + base0.toLocaleString('en-US');
+  });
+
+  document.querySelectorAll('[data-xh-fav]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('is-fav');
+      btn.textContent = on ? '★ 已收藏' : '☆ 收藏';
+      toast(on ? '已加入收藏夹' : '已取消收藏');
+    });
+  });
+
+  /* 弹窗系统 */
+  var modal = document.getElementById('xhModal');
+  var modalTitle = document.getElementById('xhModalTitle');
+  var modalBody = document.getElementById('xhModalBody');
+  var lastFocus = null;
+  function openModal(title, html){
+    lastFocus = document.activeElement;
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    modal.classList.add('is-open');
+    document.getElementById('xhModalClose').focus();
+  }
+  function closeModal(){
+    modal.classList.remove('is-open');
+    if(lastFocus){ lastFocus.focus(); }
+  }
+  document.getElementById('xhModalClose').addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){ if(e.target === modal){ closeModal(); } });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && modal.classList.contains('is-open')){ closeModal(); }
+  });
+
+  document.querySelectorAll('[data-xh-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openModal('分享这部作品', '<p>选择你想分享到的平台，或直接复制链接发送给朋友。</p><div class="xh-share-row"><button data-xh-channel="微信">微信</button><button data-xh-channel="微博">微博</button><button data-xh-channel="QQ">QQ</button><button data-xh-channel="复制链接">复制链接</button></div>');
+    });
+  });
+
+  document.addEventListener('click', function(e){
+    var ch = e.target.closest('[data-xh-channel]');
+    if(!ch){ return; }
+    var name = ch.getAttribute('data-xh-channel');
+    if(name === '复制链接' && navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText('炫舞世家夏柏 · 官方作品分享').then(function(){
+        closeModal(); toast('链接已复制，去分享给同好吧');
+      }).catch(function(){
+        closeModal(); toast('复制失败，请手动分享');
+      });
+    } else {
+      closeModal();
+      toast('已唤起' + name + '分享入口');
+    }
+  });
+
+  document.querySelectorAll('[data-xh-author]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var parts = btn.getAttribute('data-xh-author').split('|');
+      openModal(parts[0], '<p>' + parts[1] + '</p><div class="xh-share-row"><button data-xh-close-only>关闭</button><button data-xh-channel="微博">关注动态</button></div>');
+    });
+  });
+  document.addEventListener('click', function(e){
+    if(e.target.closest('[data-xh-close-only]')){ closeModal(); }
+  });
+
+  document.querySelectorAll('[data-xh-open]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var type = btn.getAttribute('data-xh-open');
+      if(type === 'submit'){
+        openModal('投稿到炫舞世家夏柏', '<p>填写基础信息即可进入官方审阅队列，三个工作日内回复。</p><label>作品标题</label><input type="text" placeholder="例如：天台上的三十秒律动" id="xhSubmitTitle"><label>作品简介</label><textarea rows="3" placeholder="拍摄时间、场地与你想表达的内容"></textarea><label>联系方式</label><input type="text" placeholder="邮箱或常用社交账号"><div class="xh-share-row"><button data-xh-submit-ok style="background:#ff4d2e;color:#fff;border-color:#ff4d2e">提交投稿</button></div>');
+      } else {
+        openModal('联系炫舞世家夏柏', '<p>品牌合作、场地联展与内容授权，都可以从这里开始。</p><label>合作类型</label><input type="text" placeholder="例如：联展 / 音乐共创 / 企业定制"><label>说明</label><textarea rows="3" placeholder="简单描述你的计划与时间安排"></textarea><div class="xh-share-row"><button data-xh-submit-ok style="background:#ff4d2e;color:#fff;border-color:#ff4d2e">发送信息</button></div>');
+      }
+    });
+  });
+  document.addEventListener('click', function(e){
+    if(e.target.closest('[data-xh-submit-ok]')){
+      closeModal();
+      toast('已收到你的信息，官方编辑会尽快联系');
+    }
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('xhTopBtn');
+  window.addEventListener('scroll', function(){
+    topBtn.classList.toggle('is-show', window.scrollY > 520);
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 首屏数据数字滚动 */
+  var statEls = document.querySelectorAll('.xh-stat b');
+  var statTexts = [];
+  statEls.forEach(function(el){ statTexts.push(el.textContent); });
+  var statDone = false;
+  function runStats(){
+    if(statDone){ return; }
+    statDone = true;
+    statEls.forEach(function(el, i){
+      var raw = statTexts[i];
+      var numMatch = raw.match(/[\d.]+/);
+      if(!numMatch){ return; }
+      var target = parseFloat(numMatch[0]);
+      var suffix = raw.replace(numMatch[0], '');
+      var start = null;
+      var dur = 900;
+      function step(ts){
+        if(!start){ start = ts; }
+        var p = Math.min((ts - start) / dur, 1);
+        var val = target * (1 - Math.pow(1 - p, 3));
+        var shown = target >= 100 ? Math.round(val) : Math.round(val);
+        el.textContent = (target % 1 !== 0 ? shown : shown) + suffix;
+        if(p < 1){ requestAnimationFrame(step); }
+        else { el.textContent = raw; }
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  var heroStats = document.querySelector('.xh-stats');
+  if('IntersectionObserver' in window && heroStats){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ runStats(); io.disconnect(); } });
+    }, {threshold:.4});
+    io.observe(heroStats);
+  } else {
+    runStats();
+  }
+})();
+</script>
+</body>
+  </html>
